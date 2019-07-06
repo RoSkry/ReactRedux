@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 class CounterView extends React.Component {
     render() {
@@ -8,7 +9,12 @@ class CounterView extends React.Component {
             </div>
         );
     }
-
 }
 
-export default CounterView;
+const mapStateToProps = state => {
+    return {
+        value: state.counterReducer.value
+    };
+};
+
+export default connect(mapStateToProps)(CounterView);

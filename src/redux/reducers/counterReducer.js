@@ -10,12 +10,12 @@ export const counterReducer = (state = initialState, action) => {
     case ADD_ONE:
       return {
         ...state,
-        value: this.state.value+1
+        value: state.value + 1
       };
     case MINUS_ONE:
       return {
         ...state,
-        value: this.state.value-1
+        value: state.value - 1
       };
     default:
       return state;

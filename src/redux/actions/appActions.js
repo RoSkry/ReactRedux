@@ -1,8 +1,8 @@
-import {CHANGE_NAME} from '../constants'
+import { CHANGE_NAME } from "../constants";
 
-export const changeNameAction = (value) => {
-    return {
-        type:CHANGE_NAME,
-        payload:value
-    }
+export const changeNameAction = value => {
+  return {
+    type: CHANGE_NAME,
+    payload: value
+  };
 };

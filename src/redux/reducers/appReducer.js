@@ -1,6 +1,5 @@
 import { CHANGE_NAME } from "../constants";
 
-
 const initialState = {
   name: "Petya",
   age: 21,

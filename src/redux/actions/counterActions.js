@@ -3,14 +3,12 @@ import { MINUS_ONE } from "../constants";
 
 export const addOneAction = value => {
   return {
-    type: ADD_ONE,
-    payload: value
+    type: ADD_ONE
   };
 };
 
 export const minusOneAction = value => {
   return {
-    type: MINUS_ONE,
-    payload: value
+    type: MINUS_ONE
   };
 };
