@@ -4,20 +4,11 @@ import { addOneAction } from "../redux/actions/counterActions";
 import { minusOneAction } from "../redux/actions/counterActions";
 
 class CounterControls extends React.Component {
-
-    
-    addPlus = () => {
-        this.props.addOneProp();
-    }
-
-    addMinus = () => {
-        this.props.minusOneProp();
-    }
     render() {
         return (
             <div>
-                <button onClick={this.addPlus}>+</button>
-                <button onClick={this.addMinus}>-</button>
+                <button onClick={this.props.addOneProp}>+</button>
+                <button onClick={this.props.minusOneProp}>-</button>
             </div>
         );
     }
